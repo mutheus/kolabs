@@ -27,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    font-family: system-ui, sans-serif;
+    font-family: 'Rajdhani', system-ui, sans-serif;
   }
 
   img, picture, video, canvas, svg {
