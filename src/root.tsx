@@ -27,6 +27,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    margin: 0;
     font-family: 'Rajdhani', system-ui, sans-serif;
   }
 
