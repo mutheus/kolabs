@@ -10,6 +10,10 @@ export const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 1.153em;
+
+  > div {
+    position: relative;
+  }
 `
 
 export const Input = styled.input`
@@ -67,4 +71,15 @@ export const Button = styled.button`
   &:hover {
     background: linear-gradient(180deg, rgba(69, 16, 138, .5) 0%, rgba(164, 94, 255, .5) 94.59%);
   }
+`
+
+export const Message = styled.p`
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 8px;
+  letter-spacing: 1.5px;
+  color: #FF5555;
+  margin-top: 2px;
+  position: absolute;
+  width: 100%;
 `

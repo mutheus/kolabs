@@ -11,7 +11,12 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   transform: translateY(25%);
-  padding-bottom: 3em;
+
+  @media (min-width: 800px) {
+    transform: translateY(15%);
+  }
+
+  padding-bottom: 4em;
 `
 
 export const Title = styled.h1`
@@ -76,6 +81,7 @@ export const Copy = styled.span`
   text-align: center;
   padding: 0 1em;
   width: 100%;
+  z-index: -1;
 
   @media (min-width: 800px) {
     bottom: 1em;
