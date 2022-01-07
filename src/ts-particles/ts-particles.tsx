@@ -12,11 +12,6 @@ export function TSParticles () {
     <ParticlesWrapper
       id='tsparticles'
       options={{
-        background: {
-          color: {
-            value: 'transparent',
-          },
-        },
         fpsLimit: 60,
         interactivity: {
           events: {
