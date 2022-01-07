@@ -16,7 +16,7 @@ export function TSParticles () {
         interactivity: {
           events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: 'push',
             },
             onHover: {

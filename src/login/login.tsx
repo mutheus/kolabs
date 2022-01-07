@@ -1,3 +1,4 @@
+import { LoginModal } from 'login-modal'
 import { TSParticles } from 'ts-particles'
 import * as S from './login-style'
 
@@ -8,14 +9,12 @@ export function Login () {
         <S.Wrapper>
           <S.Title>Create<br /> <span>Technology</span></S.Title>
 
-          <S.LoginContainer>
-            <h2>Login</h2>
+          <LoginModal />
 
-            <S.LoginOverlay />
-          </S.LoginContainer>
         </S.Wrapper>
       </S.Container>
 
+      <S.Copy>Kolabs&copy;2022 - All rights reserved</S.Copy>
       <S.Background />
       <S.Overlay />
       <TSParticles />

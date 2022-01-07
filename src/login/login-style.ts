@@ -1,5 +1,5 @@
 import styled from 'styled-components/macro'
-import texture from './assets/texture.png'
+import texture from 'shared/assets/texture.png'
 
 export const Container = styled.div`
   height: 100%;
@@ -11,35 +11,28 @@ export const Wrapper = styled.div`
   flex-direction: column;
   align-items: center;
   transform: translateY(25%);
+  padding-bottom: 3em;
 `
 
-export const LoginContainer = styled.div`
-  margin-top: -25px;
-  height: 400px;
-  width: 80%;
+export const Title = styled.h1`
+  font-size: 2.25rem;
+
+  @media (min-width: 800px) {
+    font-size: 4.5rem;
+    line-height: .95;
+  }
+
   text-align: center;
-  position: relative;
-  z-index: 10;
-  border-radius: 15px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.1) 100%);
-  box-shadow: 0px 6px 10px rgba(102, 0, 153, 0.15);
-  backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, .45);
-  padding: 22px 22px 32px;
-`
+  line-height: .8;
+  text-transform: uppercase;
 
-export const LoginOverlay = styled.div`
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-image: url('${texture}');
-  background-size: cover;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  opacity: 0.2;
-  mix-blend-mode: overlay;
-  border-radius: 15px;
+  span {
+    font-size: 4rem;
+
+    @media (min-width: 800px) {
+      font-size: 9rem;
+    }
+  }
 `
 
 export const Background = styled.div`
@@ -48,6 +41,11 @@ export const Background = styled.div`
   position: fixed;
   background: rgb(255,255,255);
   background: linear-gradient(147deg, rgba(255,255,255,1) 30%, rgba(215,183,246,1) 100%);
+
+  @media (min-width: 800px) {
+    background: linear-gradient(47deg, rgba(255,255,255,1) 25%, rgba(215,183,246,1) 100%);
+  }
+
   z-index: -2;
   top: 0;
   left: 0;
@@ -66,13 +64,21 @@ export const Overlay = styled.div`
   mix-blend-mode: overlay;
 `
 
-export const Title = styled.h1`
-  font-size: 36px;
-  text-align: center;
-  line-height: .8;
+export const Copy = styled.span`
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
   text-transform: uppercase;
+  color: rgba(0, 0, 0, .25);
+  display: inline-block;
+  position: fixed;
+  bottom: 3em;
+  text-align: center;
+  padding: 0 1em;
+  width: 100%;
 
-  span {
-    font-size: 64px;
+  @media (min-width: 800px) {
+    bottom: 1em;
+    text-align: start;
   }
 `
