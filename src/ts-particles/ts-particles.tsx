@@ -12,13 +12,9 @@ export function TSParticles () {
     <ParticlesWrapper
       id='tsparticles'
       options={{
-        fpsLimit: 60,
+        fpsLimit: 30,
         interactivity: {
           events: {
-            onClick: {
-              enable: false,
-              mode: 'push',
-            },
             onHover: {
               enable: true,
               mode: 'grab',
@@ -54,7 +50,7 @@ export function TSParticles () {
               enable: true,
               area: 800,
             },
-            value: 100,
+            value: 80,
           },
           opacity: {
             value: 0.5,
