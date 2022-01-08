@@ -19,11 +19,11 @@ git clone https://github.com/mutheus/kolabs.git && cd kolabs
 
 Install the dependencies:
 ```bash
-yarn install
+yarn
 ```
 
 Then, run the development server:
 
 ```bash
-yarn start
+yarn dev
 ```
